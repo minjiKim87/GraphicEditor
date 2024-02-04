@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="950.0" style="-fx-background-color: #A6AFB7;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controller.HelloController">
+    <center>
+        <AnchorPane fx:id="centerAnchorPane" maxHeight="500.0" maxWidth="500.0" minHeight="500.0" minWidth="500.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER" />
+    </center>
+
+    <left>
+        <AnchorPane prefHeight="600.0" prefWidth="150.0" style="-fx-background-color: #A6AFB7;" BorderPane.alignment="CENTER">
+            <children>
+                <SplitPane dividerPositions="0.5" prefHeight="600.0" prefWidth="150.0" style="-fx-background-color: #A6AFB7;">
+                    <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #323E4E;">
+                            <children>
+                                <VBox alignment="CENTER" blendMode="SCREEN" layoutX="-3.0" layoutY="-1.0" prefHeight="600.0" prefWidth="73.0" spacing="20.0">
+                                    <children>
+                                        <Button fx:id="cursorButton" mnemonicParsing="false" style="-fx-background-color: #000000;">
+                                            <graphic>
+                                                <ImageView id="cursorIcon" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@icon/cursor_icon.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="curveButton" mnemonicParsing="false" style="-fx-background-color: #000000;">
+                                            <graphic>
+                                                <ImageView id="curveIcon" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@icon/curve_icon.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="straightButton" mnemonicParsing="false" style="-fx-background-color: #000000;">
+                                            <graphic>
+                                                <ImageView id="lineIcon" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@icon/straight_icon.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="circleButton" mnemonicParsing="false" style="-fx-background-color: #000000;">
+                                            <graphic>
+                                                <ImageView fx:id="circleIcon" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@icon/circle_icon.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="squareButton" mnemonicParsing="false" style="-fx-background-color: #000000;">
+                                            <graphic>
+                                                <ImageView id="squareIcon" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@icon/square_icon.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="triangleButton" mnemonicParsing="false" style="-fx-background-color: #000000;">
+                                            <graphic>
+                                                <ImageView id="triangleIcon" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@icon/triangle_icon.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button mnemonicParsing="false" style="-fx-background-color: #000000;">
+                                            <graphic>
+                                                <ImageView id="textIcon" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@icon/text_icon.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="221.0" prefWidth="55.0" style="-fx-background-color: #323E4E;">
+                            <children>
+                                <VBox alignment="CENTER" blendMode="SCREEN" prefHeight="600.0" prefWidth="73.0" spacing="20.0" style="">
+                                    <children>
+                                        <Button fx:id="deleteButton" mnemonicParsing="false" style="-fx-background-color: #000000;">
+                                            <graphic>
+                                                <ImageView id="eraserIcon" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@icon/eraser_icon.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button mnemonicParsing="false" style="-fx-background-color: #000000;">
+                                            <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@icon/image_icon.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="moveButton" mnemonicParsing="false" style="-fx-background-color: #000000;">
+                                            <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@icon/move_icon.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button fx:id="sizeButton" mnemonicParsing="false" style="-fx-background-color: #000000;">
+                                            <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@icon/resize_icon.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button mnemonicParsing="false" style="-fx-background-color: #000000;">
+                                            <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@icon/question-mark_icon.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button mnemonicParsing="false" style="-fx-background-color: #000000;">
+                                            <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@icon/question-mark_icon.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                        <Button mnemonicParsing="false" style="-fx-background-color: #000000;">
+                                            <graphic>
+                                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@icon/question-mark_icon.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                        </Button>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </AnchorPane>
+                    </items>
+                </SplitPane>
+            </children>
+        </AnchorPane>
+    </left>
+    <right>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #A6AFB7;" BorderPane.alignment="CENTER">
+            <children>
+                <SplitPane dividerPositions="0.5" layoutX="3.0" layoutY="2.0" orientation="VERTICAL" prefHeight="600.0" prefWidth="200.0" style="-fx-background-color: #323E4E;">
+                    <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                            <children>
+                                <SplitPane dividerPositions="0.5" layoutX="3.0" layoutY="3.0" orientation="VERTICAL" prefHeight="288.0" prefWidth="191.0" style="">
+                                    <items>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #323E4E;">
+                                            <children>
+                                                <Text fill="WHITE" layoutX="5.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Properties">
+                                                    <font>
+                                                        <Font name="Yu Gothic UI Semibold" size="15.0" />
+                                                    </font>
+                                                </Text>
+                                                <Text fill="WHITE" layoutX="33.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X">
+                                                    <font>
+                                                        <Font name="Yu Gothic UI Semibold" size="15.0" />
+                                                    </font>
+                                                </Text>
+                                                <Text fill="WHITE" layoutX="11.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" fx:id="xText">
+                                                    <font>
+                                                        <Font name="Yu Gothic UI Semibold" size="15.0" />
+                                                    </font>
+                                                </Text>
+                                                <TextField layoutX="54.0" layoutY="51.0" prefHeight="22.0" prefWidth="33.0" fx:id="xTextField" />
+                                                <Text fill="WHITE" layoutX="132.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Y">
+                                                    <font>
+                                                        <Font name="Yu Gothic UI Semibold" size="15.0" />
+                                                    </font>
+                                                </Text>
+                                                <Text fx:id="yText" fill="WHITE" layoutX="106.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                                                    <font>
+                                                        <Font name="Yu Gothic UI Semibold" size="15.0" />
+                                                    </font>
+                                                </Text>
+                                                <TextField fx:id="yTextField" layoutX="149.0" layoutY="50.0" prefHeight="22.0" prefWidth="33.0" />
+                                                <Text fill="WHITE" layoutX="32.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="W">
+                                                    <font>
+                                                        <Font name="Yu Gothic UI Semibold" size="15.0" />
+                                                    </font>
+                                                </Text>
+                                                <Text fx:id="wText" fill="WHITE" layoutX="12.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                                                    <font>
+                                                        <Font name="Yu Gothic UI Semibold" size="15.0" />
+                                                    </font>
+                                                </Text>
+                                                <TextField fx:id="wTextField" layoutX="55.0" layoutY="109.0" prefHeight="22.0" prefWidth="33.0" />
+                                                <Text fill="WHITE" layoutX="132.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="H">
+                                                    <font>
+                                                        <Font name="Yu Gothic UI Semibold" size="15.0" />
+                                                    </font>
+                                                </Text>
+                                                <Text fx:id="hText" fill="WHITE" layoutX="108.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                                                    <font>
+                                                        <Font name="Yu Gothic UI Semibold" size="15.0" />
+                                                    </font>
+                                                </Text>
+                                                <TextField fx:id="hTextField" layoutX="149.0" layoutY="108.0" prefHeight="22.0" prefWidth="33.0" />
+                                            </children></AnchorPane>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #323E4E;">
+                                            <children>
+                                                <Text fill="WHITE" layoutX="6.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Z">
+                                                    <font>
+                                                        <Font name="Yu Gothic UI Semibold" size="15.0" />
+                                                    </font>
+                                                </Text>
+                                                <Button fx:id="toFrontButton" layoutX="12.0" layoutY="41.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #00000000;">
+                                                    <graphic>
+                                                        <ImageView fitHeight="59.0" fitWidth="62.0">
+                                                            <image>
+                                                                <Image url="@icon/z_front_icon.png" />
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                </Button>
+
+                                                <Button fx:id="toBackButton" layoutX="105.0" layoutY="41.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #00000000;">
+                                                    <graphic>
+                                                        <ImageView fitHeight="59.0" fitWidth="62.0">
+                                                            <image>
+                                                                <Image url="@icon/z_back_icon.png" />
+                                                            </image>
+                                                        </ImageView>
+                                                    </graphic>
+                                                </Button>
+                                            </children></AnchorPane>
+                                    </items>
+                                </SplitPane>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #323E4E;">
+                            <children>
+                                <SplitPane dividerPositions="0.5" layoutX="4.0" layoutY="4.0" orientation="VERTICAL" prefHeight="288.0" prefWidth="191.0">
+                                    <items>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #323E4E;">
+                                            <children>
+                                                <Text fill="WHITE" layoutX="7.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Color">
+                                                    <font>
+                                                        <Font name="Yu Gothic UI Semibold" size="15.0" />
+                                                    </font>
+                                                </Text>
+                                                <Text fill="WHITE" layoutX="20.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R">
+                                                    <font>
+                                                        <Font name="Yu Gothic UI Semibold" size="15.0" />
+                                                    </font>
+                                                </Text>
+                                                <TextField fx:id="rTextField" layoutX="8.0" layoutY="76.0" prefHeight="22.0" prefWidth="33.0" />
+                                                <Text fill="WHITE" layoutX="147.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B">
+                                                    <font>
+                                                        <Font name="Yu Gothic UI Semibold" size="15.0" />
+                                                    </font>
+                                                </Text>
+                                                <TextField fx:id="gTextField" layoutX="75.0" layoutY="76.0" prefHeight="22.0" prefWidth="33.0" />
+                                                <Text fill="WHITE" layoutX="84.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="G">
+                                                    <font>
+                                                        <Font name="Yu Gothic UI Semibold" size="15.0" />
+                                                    </font>
+                                                </Text>
+                                                <TextField fx:id="bTextField" layoutX="137.0" layoutY="76.0" prefHeight="22.0" prefWidth="33.0" />
+                                                <Text fx:id="rText" fill="WHITE" layoutX="22.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                                                    <font>
+                                                        <Font name="Yu Gothic UI Semibold" size="15.0" />
+                                                    </font>
+                                                </Text>
+                                                <Text fx:id="gText" fill="WHITE" layoutX="86.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                                                    <font>
+                                                        <Font name="Yu Gothic UI Semibold" size="15.0" />
+                                                    </font>
+                                                </Text>
+                                                <Text fx:id="bText" fill="WHITE" layoutX="149.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                                                    <font>
+                                                        <Font name="Yu Gothic UI Semibold" size="15.0" />
+                                                    </font>
+                                                </Text>
+                                                <ColorPicker fx:id="colorPicker" layoutX="38.0" layoutY="108.0" />
+                                            </children></AnchorPane>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #323E4E;">
+                                            <children>
+                                                <Text fill="WHITE" layoutX="4.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shadow">
+                                                    <font>
+                                                        <Font name="Yu Gothic UI Semibold" size="15.0" />
+                                                    </font>
+                                                </Text>
+                                            </children></AnchorPane>
+                                    </items>
+                                </SplitPane>
+                            </children>
+                        </AnchorPane>
+                    </items>
+                </SplitPane>
+            </children></AnchorPane>
+    </right>
+</BorderPane>
